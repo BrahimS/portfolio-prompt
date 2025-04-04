@@ -1,6 +1,10 @@
+import ChatInterface from "./components/ChatInterface";
+import ChatLayout from "./components/ui/styles/layouts/ChatLayout";
+
 export default function Home() {
   return (
-    <h1>Hello my portfolio</h1>
-
+    <ChatLayout>
+      <ChatInterface />
+    </ChatLayout>
   );
 }
