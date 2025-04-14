@@ -47,9 +47,7 @@ const patterns: Pattern[] = [
 			const projectsList = projects
 				.map(
 					(project) =>
-						`**${project.title}**\n${
-							project.description
-						}\n\nTechnologies: ${project.technologies.join(', ')}`,
+						`**${project.title}**\n\nTechnologies: ${project.technologies.join(', ')}\n\n${project.description}\n\n${project.link ? `\nlink: [${project.link}](${project.link})` : ''}\n\n`,
 				)
 				.join('\n\n');
 
@@ -63,6 +61,8 @@ const patterns: Pattern[] = [
 	{
 		keywords: [
 			'frontend',
+			'front end',
+			'front-end',
 			'react',
 			'nextjs',
 			'typescript',
@@ -75,6 +75,7 @@ const patterns: Pattern[] = [
 			'pinia',
 			'vuex',
 			'rxjs',
+      "figma"
 		],
 		response: `Brahim is highly skilled in frontend development. He has expertise in React.js, Next.js, TypeScript, and various related libraries and frameworks. He's passionate about creating intuitive, responsive, and accessible user interfaces.`,
 	},
@@ -88,7 +89,7 @@ const patterns: Pattern[] = [
 	},
 	{
 		keywords: ['location', 'live', 'based', 'from', 'country'],
-		response: `Brahim is based in Morocco but works with clients globally.`,
+		response: `Brahim is based in France but works with clients globally.`,
 	},
 	{
 		keywords: ['resume', 'cv', 'download'],
